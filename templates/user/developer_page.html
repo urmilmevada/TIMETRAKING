@@ -1,0 +1,175 @@
+{% extends '../base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Developer Dashboard</title>
+</head>
+<body>
+  <div class="container-scroller">
+    {% include '../developer_navbar.html' %}
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold">Welcome {{user.username}}</h3>
+                  <h6 class="font-weight-normal mb-0">All systems are running smoothly!</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 grid-margin transparent">
+              <div class="row">
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                  <div class="card card-tale">
+                    <div class="card-body">
+                      <p class="mb-4">Total Tasks</p>
+                      <p class="fs-30 mb-2">10</p>
+                      <p>10.00% (30 days)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                  <div class="card card-dark-blue">
+                    <div class="card-body">
+                      <p class="mb-4">Total Team Members</p>
+                      <p class="fs-30 mb-2">5</p>
+                      <p>22.00% (30 days)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                  <div class="card card-light-blue">
+                    <div class="card-body">
+                      <p class="mb-4">Total Modules</p>
+                      <p class="fs-30 mb-2">340</p>
+                      <p>2.00% (30 days)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                  <div class="card card-light-danger">
+                    <div class="card-body">
+                      <p class="mb-4">Total Work Hours</p>
+                      <p class="fs-30 mb-2">72</p>
+                      <p>0.22% (30 days)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Your Day-to-Day Work Hours</p>
+                  <p class="font-weight-500">Check Your Dedication to Work!</p>
+                  <div class="d-flex flex-wrap mb-5">
+                    <div class="mr-5 mt-3">
+                      <p class="text-muted">Total Days</p>
+                      <h3 class="text-primary fs-30 font-weight-medium">9</h3>
+                    </div>
+                    <div class="mt-3">
+                      <p class="text-muted">Today's Work Hours</p>
+                      <h3 class="text-primary fs-30 font-weight-medium">8</h3>
+                    </div> 
+                  </div>
+                  <canvas id="order-chart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+								<div class="card-body">
+									<h4 class="card-title">To Do Lists</h4>
+									<div class="list-wrapper pt-1">
+										<ul class="d-flex flex-column-reverse todo-list todo-list-custom">
+											<li>
+												<div class="form-check form-check-flat">
+													<label class="form-check-label">
+														Meeting with Urban Team
+													</label>
+												</div>
+											</li>
+                      <li>
+												<div class="form-check form-check-flat">
+													<label class="form-check-label">
+														Meeting with Urban Team
+													</label>
+												</div>
+											</li>
+                      <li>
+												<div class="form-check form-check-flat">
+													<label class="form-check-label">
+														Meeting with Urban Team
+													</label>
+												</div>
+											</li>
+                      <li>
+												<div class="form-check form-check-flat">
+													<label class="form-check-label">
+														Meeting with Urban Team
+													</label>
+												</div>
+											</li>
+                      <li>
+												<div class="form-check form-check-flat">
+													<label class="form-check-label">
+														Meeting with Urban Team
+													</label>
+												</div>
+											</li>
+                      <li>
+												<div class="form-check form-check-flat">
+													<label class="form-check-label">
+														Meeting with Urban Team
+													</label>
+												</div>
+											</li>
+                      <li>
+												<div class="form-check form-check-flat">
+													<label class="form-check-label">
+														Meeting with Urban Team
+													</label>
+												</div>
+											</li>
+                      <li>
+												<div class="form-check form-check-flat">
+													<label class="form-check-label">
+														Meeting with Urban Team
+													</label>
+												</div>
+											</li>
+                      <li>
+												<div class="form-check form-check-flat">
+													<label class="form-check-label">
+														Meeting with Urban Team
+													</label>
+												</div>
+											</li>
+										</ul>
+                  </div>
+								</div>
+							</div>
+            </div>
+          </div>
+        </div>
+          <!-- content-wrapper ends -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+</body>
+</html>
+{% endblock content %}
